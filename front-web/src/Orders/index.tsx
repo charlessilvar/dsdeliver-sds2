@@ -7,7 +7,7 @@ import { fetchProducts, saveOrder } from '../api';
 import OrderLocation from './OrderLocation';
 import OrderSummary from './OrderSummary';
 import { checkIsSelected } from './helpers';
-import { toast, ToastContainer } from 'react-toastify';
+import { toast } from 'react-toastify';
 
 function Orders() {
 
