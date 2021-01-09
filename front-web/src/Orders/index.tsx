@@ -1,19 +1,27 @@
 import './styles.css';
 import StepHeader from './StepsHeader';
 import ProductList from './ProductList';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import { Product } from './types';
+import { fetchProducts } from '../api';
+
 function Orders() {
-    
+
+    const [products, setProducts] = useState<Product[]>([]);
+     
+    console.log(products);
+
     useEffect(() => {
-        
-        //console.log('components orders inicou');
-    },[]);
+        fetchProducts()
+            .then(response => setProducts(response.data))
+            .catch(error => console.log(error))
+    }, []);
     
     return (
         <div>
             <h1 className="orders-container">
                 <StepHeader />
-                <ProductList/>
+                <ProductList products={products}/>
             </h1>
         </div>
     )
