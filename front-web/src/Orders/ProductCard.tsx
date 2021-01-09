@@ -1,5 +1,4 @@
-import { type } from "os";
-import { ReactComponent as Pizza } from "./pizza.svg";
+// import { ReactComponent as Pizza } from "./pizza.svg";
 import { Product } from "./types";
 
 type Props = {
@@ -21,7 +20,7 @@ function ProductCard({ product }: Props) {
             <h3 className="order-card-title">
                 {product.name}
             </h3>
-            
+            {/* <Pizza/> */}
             <img src={product.imageUri} className="order-card-image" alt={product.name}/>
             <h3 className="order-card-price">
                {formatPrice(product.price)}

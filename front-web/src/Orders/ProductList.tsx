@@ -9,9 +9,9 @@ function ProductList({ products }: Props){
     return (
         <div className="orders-list-container">
             <div className="orders-list-items">
-                {products.map(product => (
-                    <ProductCard key={product.id} product={product}/>
-                ))}
+                {products.map(
+                    product => (<ProductCard product={product} key={product.id} />)
+                    )}
             </div>
         </div>
     )
