@@ -83,7 +83,6 @@ function OrderLocation({onChangeLocation} : Props) {
                     position={address.position}>
                         <Popup>
                             {address.label}
-                            Minha Casa. <br /> Lar Doce Lar.
                         </Popup>
                     </Marker>
                 </MapContainer>    
