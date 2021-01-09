@@ -4,6 +4,7 @@ import ProductList from './ProductList';
 import { useEffect, useState } from 'react';
 import { Product } from './types';
 import { fetchProducts } from '../api';
+import OrderLocation from './OrderLocation';
 
 function Orders() {
 
@@ -22,6 +23,7 @@ function Orders() {
             <h1 className="orders-container">
                 <StepHeader />
                 <ProductList products={products}/>
+                <OrderLocation/>
             </h1>
         </div>
     )
