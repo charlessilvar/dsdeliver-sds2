@@ -1,12 +1,12 @@
 
 function StepHeader(){
     return (
-        <header className="order-steps-container">
+        <header className="orders-steps-container">
             <div className="orders-steps-content">
                 <h1 className="steps-title">
                     SIGA AS <br/> ETAPAS
                 </h1>
-                <ul>
+                <ul className = "steps-items">
                     <li>
                         <span className="steps-number">1</span>
                         Selecione os produtos e localização
